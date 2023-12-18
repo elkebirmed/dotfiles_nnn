@@ -28,8 +28,8 @@
         
         modules = [
           ./hosts/crazy/configuration.nix
-        ]
-      }
+        ];
+      };
     };
 
     homeConfigurations = {
@@ -39,8 +39,8 @@
 
         modules = [
           ./hosts/crazy/home.nix
-        ]
+        ];
       };
-    }
-  }
+    };
+  };
 }
