@@ -12,9 +12,10 @@
     hyprland.url = "github:hyprwm/hyprland";
   };
 
-  outputs = {self, nixpkgs, home-manager}:
+  outputs = {self, nixpkgs, home-manager} @inputs:
     let
       system = "x86_64-linux";
+      inherit (self) outputs;
       
       pkgs = import inputs.nixpkgs {
         inherit system;
